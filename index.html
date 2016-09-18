@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myFirstApp">
+<html ng-app="LunchCheck">
 
 <head>
   <meta charset="utf-8">
@@ -9,10 +9,15 @@
 </head>
 
 <body>
-  <h1> Assignement One </h1>
-  <div ng-controller="myFirstController">
-    <div><input type="text" ng-model="name" ng-keyup="displayvalue();"></div>
-    <div>Total numeric value {{total}}</div>
+  <h1> Module 1 Code Assignment</h1>
+  <div ng-controller="LunchCheckController">
+    <div>{{message}}</div>
+    <div><input type="text" ng-model="items" ng-keyup="enoughtItems();"></div>
+    </br>
+    <div>
+      
+      <button ng-click="checkEnought()">Check If Too Much</button>{{validateMessage}}
+    </div>
   </div>
 </body>
 
