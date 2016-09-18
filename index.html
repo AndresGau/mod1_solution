@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title> Module 1 </title>
+  <title> Module 1Module Man </title>
   <script src="angular.min.js"></script>
   <script src="app.js"></script>
 </head>
@@ -11,11 +11,10 @@
 <body>
   <h1> Module 1 Code Assignment</h1>
   <div ng-controller="LunchCheckController">
-    <div>{{message}}</div>
+ 
     <div><input type="text" ng-model="items" ng-keyup="enoughtItems();"></div>
     <br/>
     <div>
-      
       <button ng-click="checkEnought();">Check If Too Much</button> {{validateMessage}}
     </div>
   </div>
