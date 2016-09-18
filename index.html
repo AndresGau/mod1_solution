@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+
+<head>
+  <meta charset="utf-8">
+  <title> Hello Coursera </title>
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <h1> Hello All People </h1>
+  <div ng-controller="myFirstController">
+    <div><input type="text" ng-model="name" ng-keyup="displayvalue();"></div>
+    <div>Total numeric value {{total}}</div>
+  </div>
+</body>
+
+</html>
